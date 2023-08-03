@@ -18,7 +18,7 @@
 </head>
 
 <?php
-    function get_mahasiswa($url){
+    function get_data($url){
         $curl = curl_init();
         curl_setopt_array($curl, array(
         CURLOPT_URL => $url,
@@ -50,7 +50,7 @@
         </tr>
     
         <?php
-            $requestData = get_mahasiswa("http://localhost:5010/get_data_siswa");
+            $requestData = get_data("http://localhost:5010/get_data_siswa");
             $data_siswa = json_decode($requestData, true);
 
             foreach($data_siswa as $siswa) {
@@ -77,7 +77,7 @@
         </tr>
     
         <?php
-            $requestData = get_mahamahasiswa("http://localhost:5011/get_data_mahasiswa");
+            $requestData = get_data("http://localhost:5011/get_data_mahasiswa");
             $data_mahasiswa = json_decode($requestData, true);
 
             foreach($data_mahasiswa as $mahasiswa) {
