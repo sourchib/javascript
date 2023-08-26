@@ -1,6 +1,6 @@
 # python-mysql-flask-mysql-javascript
 
-% Komponen
++ Komponen
 
 1. Install Python
 2. Install modul microframework flask (python –m pip install flask)
